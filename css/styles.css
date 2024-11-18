@@ -1,36 +1,50 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 350px;
+}
+
 .button {
     background-color: black;
     padding: auto;
     border: none;
-    border-radius: 24px;
+    border-radius: 30em;
+    
+    z-index: 1;
 
-    width: 300px;
+    width: 100px;
     height: 100px;
 
+    overflow: hidden;
+    box-shadow: 6px 6px 12px #c5c5c5,
+    -6px, -6px 12px #ffffff;
     color: azure;
 
     transition: all 1000ms ease-in-out;
 }
 
 .button:hover {
-    background-color: red;
+    background-color: grey;
     cursor: pointer;
 
-    width: 700px;
+    width: 400px;
 
     color: black;
 }
 
 .button:hover .main-title {
     letter-spacing: 0.5em;
+    font-size: 18px;
 }
 
 .main-title {
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 10px;
     letter-spacing: 0.02em;
-    transition: letter-spacing 1000ms ease-in-out;
+    transition: letter-spacing 1000ms ease-in-out,
+    font-size 1000ms ease-in-out;
 }
 
